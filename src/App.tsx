@@ -1,9 +1,14 @@
 import { Navbar } from "./components/Navbar";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navbar />
+    <div className="flex h-screen">
+      <Sidebar />
+
+      <div className="flex flex-col flex-1">
+        <Navbar />
+      </div>
     </div>
   );
 }
