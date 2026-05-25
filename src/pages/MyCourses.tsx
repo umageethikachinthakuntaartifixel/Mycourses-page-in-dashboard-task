@@ -69,8 +69,8 @@ export const MyCourses = () => {
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
             <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center justify-beween mb-6">
-                    <h1 className="text-xl font=semibold">My Courses</h1>
+                <div className="flex items-center justify-between mb-6">
+                    <h1 className="text-xl font-semibold">My Courses</h1>
                     <Button
                         color="blue"
                         onClick={() => {

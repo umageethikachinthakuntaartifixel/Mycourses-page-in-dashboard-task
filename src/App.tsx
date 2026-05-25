@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 
 import { Navbar } from "./components/Navbar";
 import { Sidebar } from "./components/Sidebar";
@@ -8,7 +8,6 @@ import { NewCourses } from "./pages/NewCourses";
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="flex h-screen bg-gray-100">
         <Sidebar />
 
@@ -17,7 +16,7 @@ function App() {
 
           <div className="flex-1 overflow-y-auto">
             <Routes>
-              <Route path="/" element={<Navigate to="/courses" />} />
+              <Route path="/" element={null} />
 
               <Route path="/courses" element={<MyCourses />} />
                <Route path="/courses/new" element={<NewCourses />} />
@@ -25,7 +24,6 @@ function App() {
           </div>
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 

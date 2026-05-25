@@ -29,7 +29,7 @@ export const Sidebar = () => {
           <span>Home</span>
         </NavLink>
 
-        <NavLink to="/Courses" className={linkStyle}>
+        <NavLink to="/courses" className={linkStyle}>
           <FaBook size={20} />
           <span>My Courses</span>
         </NavLink>
